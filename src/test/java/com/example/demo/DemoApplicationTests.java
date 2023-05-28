@@ -14,7 +14,11 @@ class DemoApplicationTests {
 	@Test
 	void dummyTest() {
 		System.out.println("sleeping for 5 minutes");
-		TimeUnit.MINUTES.sleep(5);
+		try {
+			TimeUnit.MINUTES.sleep(5);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 		assert(1 == 1);
 	}
 }
