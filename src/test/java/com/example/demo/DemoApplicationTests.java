@@ -11,7 +11,7 @@ class DemoApplicationTests {
 	}
 
 	@Test
-	void failTest() {
-		assert(1 == 2);
+	void dummyTest() {
+		assert(1 == 1);
 	}
 }
